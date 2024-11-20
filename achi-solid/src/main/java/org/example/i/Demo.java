@@ -1,35 +1,41 @@
 package org.example.i;
 
-import org.example.i.book.BookManager;
+
 import org.example.i.book.Book;
-import org.example.i.book.FictionBook;
+import org.example.i.book.BookManager;
 import org.example.i.book.NonFictionBook;
+import org.example.i.member.Member;
 import org.example.i.member.MemberManager;
 import org.example.i.member.PremiumMember;
 import org.example.i.member.RegularMember;
-import org.example.i.member.Member;
+import org.example.i.BorrowManager;
+
 
 public class Demo {
     public static void main(String[] args) {
-        // Initialisation des gestionnaires
         BookManager bookManager = new BookManager();
         MemberManager memberManager = new MemberManager();
         BorrowManager borrowManager = new BorrowManager();
+        Book bookFiction = new NonFictionBook("The Hobbit");
+        Book bookNonFiction = new NonFictionBook("Les Misérables");
 
-        // Ajout des livres avec leurs types spécifiques
-        bookManager.addBook(new FictionBook("The Hobbit"));
-        bookManager.addBook(new NonFictionBook("Sapiens: A Brief History of Humankind"));
+        bookManager.addBook(bookFiction);
+        bookManager.addBook(bookNonFiction);
 
-        // Ajout des membres
-        memberManager.addMember(new PremiumMember("John Doe"));
-        memberManager.addMember(new RegularMember("Alice"));
+      Member premMember = new PremiumMember("Alice");
+      Member regularMember = new RegularMember("John");
 
-        // Gestion des emprunts
-        borrowManager.borrowBook("The Hobbit", "Alice",
+        memberManager.addMember(premMember);
+        memberManager.addMember(regularMember);
+
+        borrowManager.borrowBook(bookFiction, premMember,
                 bookManager.getBooks().stream().map(Book::getTitle).toList(),
                 memberManager.getMembers().stream().map(Member::getName).toList());
 
-        // Affichage des informations
+        borrowManager.borrowBook(bookNonFiction, regularMember,
+                bookManager.getBooks().stream().map(Book::getTitle).toList(),
+                memberManager.getMembers().stream().map(Member::getName).toList());
+
         Displayable[] displayables = { bookManager, memberManager, borrowManager };
         for (Displayable displayable : displayables) {
             displayable.display();

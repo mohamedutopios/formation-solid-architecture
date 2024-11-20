@@ -11,4 +11,11 @@ class PremiumMember implements Member {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "PremiumMember{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

@@ -17,4 +17,6 @@ class MemberManager {
     public void displayMembers() {
         members.forEach(member -> System.out.println("Member: " + member.getName()));
     }
+
+
 }

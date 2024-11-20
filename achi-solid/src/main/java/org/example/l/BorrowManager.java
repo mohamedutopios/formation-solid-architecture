@@ -1,14 +1,16 @@
 package org.example.l;
 
+import org.example.l.book.Book;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 class BorrowManager {
-    private Map<String, String> borrowedBooks = new HashMap<>();
+    private Map<Book, Member> borrowedBooks = new HashMap<>();
 
-    public void borrowBook(String book, String member, List<String> books, List<String> members) {
-        if (books.contains(book) && members.contains(member)) {
+    public void borrowBook(Book book, Member member, List<String> books, List<String> members) {
+        if (books.contains(book.getTitle()) && members.contains(member.getName())) {
             borrowedBooks.put(book, member);
             System.out.println(member + " has borrowed " + book);
         } else {

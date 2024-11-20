@@ -11,4 +11,11 @@ public class RegularMember implements Member {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "RegularMember{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

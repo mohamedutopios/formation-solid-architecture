@@ -1,7 +1,9 @@
 package org.example.d;
 
 import org.example.d.book.BookRepository;
+import org.example.d.member.Member;
 import org.example.d.member.MemberRepository;
+import org.example.d.book.Book;
 
 import java.util.HashMap;
 import java.util.List;
@@ -11,19 +13,19 @@ class BorrowManager implements Displayable {
 
     private final BookRepository bookRepo;
     private final MemberRepository memberRepo;
-    private final Map<String, String> borrowedBooks = new HashMap<>();
+    private final Map<Book, Member> borrowedBooks = new HashMap<>();
 
     public BorrowManager(BookRepository bookRepo, MemberRepository memberRepo) {
         this.bookRepo = bookRepo;
         this.memberRepo = memberRepo;
     }
 
-    public void borrowBook(String book, String member) {
-        if (!bookRepo.getBooks().stream().anyMatch(b -> b.getTitle().equals(book))) {
+    public void borrowBook(Book book, Member member) {
+        if (bookRepo.getBooks().stream().noneMatch(b -> b.getTitle().equals(book.getTitle()))) {
             System.out.println("Book '" + book + "' does not exist.");
             return;
         }
-        if (!memberRepo.getMembers().stream().anyMatch(m -> m.getName().equals(member))) {
+        if (memberRepo.getMembers().stream().noneMatch(m -> m.getName().equals(member.getName()))) {
             System.out.println("Member '" + member + "' does not exist.");
             return;
         }

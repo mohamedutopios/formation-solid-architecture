@@ -17,6 +17,8 @@ footer: "Utopios® Tous droits réservés"
 
 ## Sommaire
 
+<br>
+
 1. Introduction à l'Architecture Logicielle
 2. Appliquer les principes SOLID aux modules d’une application
 3. Maintenir la dette technique sous contrôle
@@ -2018,6 +2020,7 @@ Où :
 
 ---
 
+
 ### Maintenir la dette technique sous contrôle
 
 <div style="font-size:30px">
@@ -2047,6 +2050,39 @@ Ces composants se situent sur une droite appelée la "ligne d’équilibre" entr
 
 - L’axe des $x$ représente la **stabilité ($S$)**.
 - L’axe des $y$ représente le **degré d’abstraction ($A$)**.
+
+</div>
+
+---
+### Maintenir la dette technique sous contrôle
+
+<div style="font-size:30px">
+
+### Mesure du caractère abstrait d’un composant
+
+</div>
+
+<div style="font-size:21px">
+
+<br>
+
+### **2. Mesurer le caractère abstrait**
+
+<div class="columns">
+<div>
+<center>
+<img src="./assets/output.png" width="350px">
+</center>
+</div>
+<div>
+
+Voici le graphique illustrant la relation entre **abstraction (A)** et **stabilité (S)**. Les composants idéaux se trouvent sur la "ligne d'équilibre" (en bleu), où abstraction et stabilité sont proportionnées.
+
+- Le point vert représente un composant **équilibré**.
+- Le point rouge illustre un composant **trop concret** (faible abstraction).
+- Le point orange illustre un composant **trop instable** (faible stabilité).
+
+</div>
 
 </div>
 
@@ -2197,38 +2233,6 @@ Pour optimiser les dépendances entre abstraction et inertie :
 
 ---
 
-### Maintenir la dette technique sous contrôle
-
-<div style="font-size:30px">
-
-#### Relation entre caractère abstrait et inertie
-
-</div>
-
-<div style="font-size:20px">
-
-### **3. Optimiser les dépendances : Trouver un équilibre**
-
-Pour optimiser les dépendances entre abstraction et inertie :
-
-#### **a. Appliquer le Principe de dépendance stable (SDP)**
-
-- Les modules stables (faible inertie) doivent dépendre d’abstractions stables, pas d’implémentations.
-- Cela garantit que les modules critiques ne subissent pas l’effet domino des changements.
-
-#### **b. Utiliser le Principe d'inversion des dépendances (DIP)**
-
-- Le DIP recommande de dépendre des **abstractions** plutôt que des **détails**.
-- Cela réduit l’inertie des composants dépendants en rendant leur comportement extensible via des interfaces.
-
-#### **c. Adapter le degré d'abstraction**
-
-- **Composants centraux** : Haute abstraction pour réduire l’inertie (ex. : interfaces pour les règles métier).
-- **Composants périphériques** : Moins d’abstraction si le coût de changement est faible (ex. : implémentations concrètes des services externes).
-
-</div>
-
----
 
 ### Maintenir la dette technique sous contrôle
 
@@ -2280,4 +2284,3 @@ Pour optimiser les dépendances entre abstraction et inertie :
 <img src="./assets/demo.jpg" width="500px">
 </center>
 
----

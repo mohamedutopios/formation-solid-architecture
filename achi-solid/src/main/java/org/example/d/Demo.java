@@ -1,11 +1,9 @@
 package org.example.d;
 
-import org.example.d.book.BookRepository;
-import org.example.d.book.FictionBook;
-import org.example.d.book.NonFictionBook;
+import org.example.d.book.*;
 import org.example.d.member.MemberManager;
 import org.example.d.member.MemberRepository;
-import org.example.d.book.BookManager;
+import org.example.d.member.Member;
 import org.example.d.member.PremiumMember;
 import org.example.d.member.RegularMember;
 
@@ -16,19 +14,29 @@ public class Demo {
         MemberRepository memberRepo = new MemberManager();
         BorrowManager borrowManager = new BorrowManager(bookRepo, memberRepo);
 
+
+        Book fictionBook = new FictionBook("The Hobbit");
+        Book nonFiction = new NonFictionBook("Sapiens: A Brief History of Humankind");
+        Book FictionBook2 = new NonFictionBook("Un jour sans fin");
+
         // Ajout de livres
-        bookRepo.addBook(new FictionBook("The Hobbit"));
-        bookRepo.addBook(new NonFictionBook("Sapiens: A Brief History of Humankind"));
+        bookRepo.addBook(fictionBook);
+        bookRepo.addBook(nonFiction);
 
         // Ajout de membres
-        memberRepo.addMember(new RegularMember("Alice"));
-        memberRepo.addMember(new PremiumMember("Bob"));
+        Member premMember = new PremiumMember("Alice");
+        Member regularMember = new RegularMember("John");
+        Member regularMember2 = new RegularMember("Tom");
+
+        memberRepo.addMember(premMember);
+        memberRepo.addMember(regularMember);
+        memberRepo.addMember(regularMember2);
 
         // Gestion des emprunts
-        borrowManager.borrowBook("The Hobbit", "Alice"); // Succès
-        borrowManager.borrowBook("Sapiens: A Brief History of Humankind", "Bob"); // Succès
-        borrowManager.borrowBook("The Hobbit", "Bob"); // Déjà emprunté
-        borrowManager.borrowBook("Unknown Book", "Alice"); // Livre inexistant
+        borrowManager.borrowBook(fictionBook, premMember); // Succès
+        borrowManager.borrowBook(nonFiction, regularMember); // Succès
+        borrowManager.borrowBook(fictionBook, premMember); // Déjà emprunté
+        borrowManager.borrowBook(FictionBook2, regularMember2); // Livre inexistant
 
         // Affichage des informations
         Displayable[] displayables = {(Displayable) bookRepo, (Displayable) memberRepo, borrowManager };

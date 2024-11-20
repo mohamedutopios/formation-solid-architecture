@@ -150,3 +150,10 @@ Le diagramme des tensions pour les principes SOLID appliqués à l'API a été g
 - [Téléchargez le graphique radar au format PNG](sandbox:/mnt/data/SOLID_API_Tensions.png) pour visualiser les tensions.
 
 Ces ressources vous permettent d'explorer les compromis liés à chaque principe dans un cas concret. Si vous souhaitez des ajustements ou d'autres visualisations, faites-le moi savoir ! 😊
+
+
+Voici le graphique illustrant la relation entre **abstraction (A)** et **stabilité (S)**. Les composants idéaux se trouvent sur la "ligne d'équilibre" (en bleu), où abstraction et stabilité sont proportionnées.
+
+- Le point vert représente un composant **équilibré**.
+- Le point rouge illustre un composant **trop concret** (faible abstraction).
+- Le point orange illustre un composant **trop instable** (faible stabilité).

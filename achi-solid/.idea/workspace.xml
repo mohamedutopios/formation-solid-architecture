@@ -5,62 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0318db65-502a-4dee-9118-fa231c762b9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/BorrowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/Displayable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/book/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/book/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/book/FictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/book/NonFictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/member/MemberManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/member/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/member/PremiumMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/d/member/RegularMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/BorrowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/Displayable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/book/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/book/FictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/book/NonFictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/member/MemberManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/member/PremiumMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/i/member/RegularMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/BorrowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/MemberManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/PremiumMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/RegularMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/book/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/book/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/book/FictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/l/book/NonFictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/BorrowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/FictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/MemberManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/o/NonFictionBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/s/BookManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/s/BorrowManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/s/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/s/MemberManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/start/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/start/LibraryManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/d/BorrowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/d/BorrowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/d/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/d/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/i/BorrowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/i/BorrowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/i/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/i/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/l/BorrowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/l/BorrowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/l/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/l/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/l/MemberManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/l/MemberManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/l/PremiumMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/l/PremiumMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/l/RegularMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/l/RegularMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/l/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/l/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/o/BorrowManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/o/BorrowManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/o/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/o/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/o/NonFictionBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/o/NonFictionBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../support.md" beforeDir="false" afterPath="$PROJECT_DIR$/../support.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tension-diag.md" beforeDir="false" afterPath="$PROJECT_DIR$/../tension-diag.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +39,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2p2Qj7nrhJY4jVc1OrCZlt2CHgV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -90,11 +50,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Demo.executor": "Run",
+    "Application.org.example.l.Demo.executor": "Run",
+    "Application.org.example.o.Demo.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/mohamedaijjou/Downloads/marp-solid-architcture/achi-solid/src/main/java/org/example/d",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mohamed/Downloads/formation-solid-atchitecture/achi-solid",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,7 +80,7 @@
       <recent name="org.example.o" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Demo">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.d.Demo" />
       <module name="achi-solid" />
@@ -129,17 +94,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.example.l.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.l.Demo" />
+      <module name="achi-solid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.l.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.o.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.o.Demo" />
+      <module name="achi-solid" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.o.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.org.example.l.Demo" />
+        <item itemvalue="Application.org.example.o.Demo" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -152,6 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731961822753</updated>
       <workItem from="1731961823994" duration="6663000" />
+      <workItem from="1732101961731" duration="2885000" />
     </task>
     <servers />
   </component>
